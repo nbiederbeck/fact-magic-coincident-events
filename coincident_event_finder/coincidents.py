@@ -31,7 +31,9 @@ def coincident_indices(list0, list1, delta):
         for t1 in iter(times):
             diffs.append(abs(t0 - t1))
         if len(diffs) > 0:
-            coincidents[slist0.index(t0)] = slist1.index(times[np.argmin(diffs)])
+            coincidents[slist0.index(t0)] = slist1.index(
+                times[np.argmin(diffs)]
+            )
 
     return coincidents
 

@@ -8,11 +8,19 @@ def test_merge_events_0():
     items1 = [2, 3, 5]
 
     data0 = pd.DataFrame(
-        data={"A": [1, 1, 2, 3, 5], "items": [1, 2, 4, 8, 16], "B": [1, 4, 16, 64, 256]}
+        data={
+            "A": [1, 1, 2, 3, 5],
+            "items": [1, 2, 4, 8, 16],
+            "B": [1, 4, 16, 64, 256],
+        }
     )
 
     data1 = pd.DataFrame(
-        data={"C": [6, 4, 3, 2, 2], "items": [17, 9, 5, 3, 2], "D": [257, 65, 17, 5, 2]}
+        data={
+            "C": [6, 4, 3, 2, 2],
+            "items": [17, 9, 5, 3, 2],
+            "D": [257, 65, 17, 5, 2],
+        }
     )
 
     data0 = data0.set_index("items")
