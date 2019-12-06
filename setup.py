@@ -7,6 +7,6 @@ setup(
     author="Noah Biederbeck",
     author_email="noah.biederbeck@tu-dortmund.de",
     packages=find_packages(),
-    usage_requires=["pandas", "numpy", "sortedcontainers"],
+    install_requires=["pandas", "numpy", "sortedcontainers"],
     test_requires=["pandas"],
 )
